@@ -4,12 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reaction Time Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <input type="text" id="username">
-    <button onclick="SubmitScore()">Submit</button>
+    <section id="start">
+        <div>
+            <h1>Test Your Reaction Time!</h1>
+        </div>
+        <div class="name">
+            <input type="text" id="name" placeholder="Write your name">
+            <button id="startButton">Start Game</button>
+        </div>
+    </section>
+    <section id="game">
+        <div>
+
+            <div id="box"></div>
+        </div>
+        <div class="play">
+            <p id="message">Wait for the ghost to appear and click as fast as you can!</p>
+            <p id="result"></p>
+            <button id="playAgain">Play Again</button>
+            <button id="save">Save highscore</button>
+            <p id="nah"></p>
+        </div>
+
+    </section>
     <script src="script.js"></script>
 </body>
 
